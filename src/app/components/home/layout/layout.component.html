@@ -1,0 +1,101 @@
+<div class="container-xxl fixed-top p-0">
+  <nav
+    class="navbar navbar-topbar navbar-expand-sm bg-light p-0 d-none d-sm-block"
+    id="socialbar"
+  >
+    <div class="container-fluid justify-content-end">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item px-2">
+          <a href="#" class="nav-link"
+            ><i class="bi bi-facebook text-primary"></i
+          ></a>
+        </li>
+        <li class="nav-item px-2">
+          <a href="#" class="nav-link"
+            ><i class="bi bi-whatsapp text-success"></i
+          ></a>
+        </li>
+        <li class="nav-item px-2">
+          <a href="#" class="nav-link"
+            ><i class="bi bi-instagram text-danger"></i
+          ></a>
+        </li>
+        <!-- <li class="nav-item px-2">
+          <a href="#" class="nav-link text-secondary"
+            >Contact: +91 9895969293</a
+          >
+        </li> -->
+        <!-- <li class="nav-item px-2">
+            <a href="#" class="nav-link text-light"
+              ><i class="bi bi-telephone-fill text-light"></i> +91987654321</a
+            >
+          </li> -->
+      </ul>
+    </div>
+  </nav>
+
+  <nav class="navbar navbar-expand-sm navbar-light p-0 bg-light">
+    <div class="container-fluid">
+      <a href="index.html" class="navbar-brand" routerLink="/">
+        <img
+          src="./assets/images/hari-logo2.png"
+          height="35"
+          class="d-inline"
+          alt="Logo"
+        />
+      </a>
+      <button
+        class="navbar-toggler"
+        data-toggle="collapse"
+        data-target="#navbarCollapse"
+        (click)="isShown = !isShown"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="collapse navbar-collapse justify-content-end"
+        id="navbarCollapse"
+        [ngClass]="{ show: isShown }"
+      >
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item px-3" *ngFor="let item of navData" (click)="goToView(item.navUrl)">
+            <p class="nav-link">{{item.navLink}}</p>
+          </li>
+          <!-- <li class="nav-item px-3">
+            <a href="#detailsSection" class="nav-link">Project details</a>
+          </li> -->
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+</div>
+
+<!-- Main section -->
+
+<!-- Banner section -->
+
+<!-- end -->
+
+<!-- Body section -->
+
+<section id="overviewSection" class="bg-light"> 
+    <div class="container">
+        <div class="row">
+          <!-- empty container for main section -->
+        </div>
+      </div>
+</section>
+
+<header id="detailsSection" class="bg-light text-muted">
+<div class="container">
+    <div class="row">
+        <div class="col text-center">
+            <h4 class="display-4">Project Details</h4>
+        </div>
+    </div>
+</div>
+</header>
+
+
+

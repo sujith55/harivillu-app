@@ -1,0 +1,44 @@
+#socialbar {
+    opacity: 1.0;
+    border-bottom: none;
+    /* border-bottom: #e7e7e7 1px solid; */
+  }
+  
+  #socialbar .container-fluid {
+    padding: 0;
+    opacity: 1;
+  }
+  
+  /* #socialbar .nav-fill {
+    width: 70%;
+    background: #555;
+    padding: 0.5rem;
+    clip-path: polygon(0% 100%, 100% 100%, 0% 0%);
+  } */
+  .navbar {
+    border-bottom: #ffb223 2px solid;
+    /* opacity: 0.9; */
+  }
+  .navbar a.nav-link{
+    padding: 5px;
+  }
+
+  #home-section{
+    background: url("/assets/images/cover.jpg") no-repeat;
+    min-height: 600px;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  #home-section .dark-overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 600px;
+  }
+
+  #home-section .dark-overlay .home-inner{
+    padding-top: 150px;
+  }

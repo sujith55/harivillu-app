@@ -1,0 +1,37 @@
+[
+    {
+        "projectId":1,
+        "projectName":"Fortune Sunshine city",
+        "description":"Description about this project and it's details",
+        "titleImg":"./assets/images/hari-logo2.png",
+        "projectImg":"./assets/images/cover.jpg"
+    },
+    {
+        "projectId":2,
+        "projectName":"County delight",
+        "description":"Description about this project and it's details",
+        "titleImg":"./assets/images/hari-logo2.png",
+        "projectImg":"./assets/images/cover.jpg"
+    },
+    {
+        "projectId":3,
+        "projectName":"Lakeview County",
+        "description":"Description about this project and it's details",
+        "titleImg":"./assets/images/hari-logo2.png",
+        "projectImg":"./assets/images/cover.jpg"
+    },
+    {
+        "projectId":4,
+        "projectName":"Lakeview County",
+        "description":"Description about this project and it's details",
+        "titleImg":"./assets/images/hari-logo2.png",
+        "projectImg":"./assets/images/cover.jpg"
+    },
+    {
+        "projectId":4,
+        "projectName":"Lakeview County",
+        "description":"Description about this project and it's details",
+        "titleImg":"./assets/images/hari-logo2.png",
+        "projectImg":"./assets/images/cover.jpg"
+    }
+]

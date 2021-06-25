@@ -1,0 +1,26 @@
+[
+    {
+        "navLink":"Overview",
+        "navUrl":"overviewSection"
+    },
+    {
+        "navLink":"Project details",
+        "navUrl":"detailsSection"
+    },
+    {
+        "navLink":"Plan",
+        "navUrl":"#planSection"
+    },
+    {
+        "navLink":"Map location",
+        "navUrl":"#mapSection"
+    },
+    {
+        "navLink":"Amenities",
+        "navUrl":"#amenitySection"
+    },
+    {
+        "navLink":"Gallery",
+        "navUrl":"#gallerySection"
+    }
+]

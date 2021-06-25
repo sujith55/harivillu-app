@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="row">
+    <div class="col-lg-4 py-2" *ngFor="let layout of layouts;">
+      <div class="card shadow-sm bg-body rounded">
+        <div class="card-header text-center">
+          <img src="{{layout.titleImg}}" width="100" alt="" />  
+        </div>
+        <img
+            src="{{layout.projectImg}}"
+            class="card-img-top"
+            alt="..."
+          />
+        <div class="card-body bg-light">
+          <h5 class="card-title">{{layout.projectName}}</h5>
+          <p class="card-text">
+            {{layout.description}}
+          </p>
+          <p class="card-text">Last updated 3 mins ago</p>
+          <div class="text-center">
+            <button class="btn btn-outline-warning" routerLink="/{{layout.projectId}}">Know more</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

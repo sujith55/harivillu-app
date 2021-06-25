@@ -1,0 +1,28 @@
+#socialbar {
+    opacity: 1.0;
+    border-bottom: none;
+    /* border-bottom: #e7e7e7 1px solid; */
+  }
+  
+  #socialbar .container-fluid {
+    padding: 0;
+    opacity: 1;
+  }
+  
+  .navbar {
+    border-bottom: #ffb223 2px solid;
+    /* opacity: 0.9; */
+  }
+  .navbar p.nav-link{
+    padding: 5px;
+    margin: 0;
+    cursor: pointer;
+  }
+
+  #overviewSection{
+    padding-top: 250px;
+    background: url("/assets/images/cover.jpg") no-repeat;
+    min-height: 600px;
+    background-size: cover;
+    background-attachment: fixed;
+  }
