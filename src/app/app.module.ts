@@ -10,6 +10,7 @@ import { LayoutsService } from './services/layouts.service';
 import { HttpClientModule } from '@angular/common/http';
 import { LayoutComponent } from './components/home/layout/layout.component';
 import { CommonService } from './services/common.service';
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { CommonService } from './services/common.service';
     CommonService
     // AppRoutingModule
   ],
+  schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

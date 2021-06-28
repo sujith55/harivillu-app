@@ -11,9 +11,17 @@ import { LayoutsService } from 'src/app/services/layouts.service';
 export class LayoutComponent implements OnInit {
 
   projectId : string;
+  titleImg: any;
   layout = {}; 
   navData = [];
+  amenityData= [];
+  // imagesBasic=[];
   isShown = false;
+
+  imagesBasic = [
+    { img: '/assets/images/3.jpg', thumb:
+    '/assets/images/3.jpg', description: 'Image 1' },
+    ];
 
   constructor(private route: ActivatedRoute, private service_: LayoutsService, private common: CommonService, private myElement: ElementRef) {
     this.common.getNavContent().subscribe((res: any)=>{
@@ -28,7 +36,11 @@ export class LayoutComponent implements OnInit {
     this.projectId = this.route.snapshot.params['id'];
     this.service_.getLayoutbyId(this.projectId).subscribe((res)=>{
       this.layout = res['data'];
-      console.log(this.layout);
+      this.titleImg = this.layout["titleImg"];
+      // console.log(this.layout);
+    });
+    this.common.getAmenityContent().subscribe((res)=>{
+      this.amenityData = res['data'];
     });
   }
 

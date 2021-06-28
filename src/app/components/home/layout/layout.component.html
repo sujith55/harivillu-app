@@ -37,12 +37,7 @@
   <nav class="navbar navbar-expand-sm navbar-light p-0 bg-light">
     <div class="container-fluid">
       <a href="index.html" class="navbar-brand" routerLink="/">
-        <img
-          src="./assets/images/hari-logo2.png"
-          height="35"
-          class="d-inline"
-          alt="Logo"
-        />
+        <img src="{{ titleImg }}" height="35" class="d-inline" alt="Logo" />
       </a>
       <button
         class="navbar-toggler"
@@ -58,14 +53,17 @@
         [ngClass]="{ show: isShown }"
       >
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item px-3" *ngFor="let item of navData" (click)="goToView(item.navUrl)">
-            <p class="nav-link">{{item.navLink}}</p>
+          <li
+            class="nav-item px-3"
+            *ngFor="let item of navData;"
+            (click)="goToView(item.navUrl)"
+          >
+            <p class="nav-link">{{ item.navLink }}</p>
           </li>
           <!-- <li class="nav-item px-3">
             <a href="#detailsSection" class="nav-link">Project details</a>
           </li> -->
         </ul>
-
       </div>
     </div>
   </nav>
@@ -79,23 +77,153 @@
 
 <!-- Body section -->
 
-<section id="overviewSection" class="bg-light"> 
-    <div class="container">
-        <div class="row">
-          <!-- empty container for main section -->
-        </div>
-      </div>
+<section id="overviewSection" class="bg-light">
+  <div class="container-xxl">
+    <div class="row">
+      <!-- empty container for main section -->
+    </div>
+  </div>
 </section>
 
-<header id="detailsSection" class="bg-light text-muted">
-<div class="container">
+<section id="detailsSection" class="bg-light text-muted p-4">
+  <div class="container">
     <div class="row">
-        <div class="col text-center">
-            <h4 class="display-4">Project Details</h4>
-        </div>
+      <div class="col text-center">
+        <h4 class="display-6">Project <span class="text-warning">Details</span></h4>
+        <p class="lead">Know little about the project</p>
+        <!-- <a href="#project-details" class="btn btn-outline-warning">Find out more</a> -->
+      </div>
     </div>
+  </div>
+</section>
+
+<section id="project-details" class="bg-light">
+  <div class="dark-overlay">
+    <div class="container-xxl">
+      <div class="row">
+        <div class="col-lg-6 align-self-center">
+          <figure class="text-end">
+            <blockquote class="blockquote">
+              <p>AN EXCLUSIVE 3BHK APARTMENTS COMMUNITY AT KOKAPET.</p>
+            </blockquote>
+            <figcaption class="blockquote-footer text-light">
+               <cite title="Source Title">is a magnificent 3 BHK luxury apartments community in Hyderabad that offers intangible exhilarations in the form of visual extravaganza and spatial freedom. Rajapushpa Regalia is a world of indulgence, set within three grand towers, where everyday brings another reason to toast a good life. To feel the ecstasy from the close quarters, you are invited to visit the realm of luxury.</cite>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="col-lg-6 p-3">
+          <div class="ratio ratio-16x9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/d3toByGTx9w"
+            allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="planSection" class="bg-light text-muted p-2">
+  <div class="container">
+    <div class="row">
+      <div class="col text-center">
+        <h4 class="display-6">Layout <span class="text-warning">plan</span></h4>
+        <p class="lead">Layout with plots.</p>
+        <!-- <a href="#project-details" class="btn btn-outline-warning">Find out more</a> -->
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="plan" class="bg-light text-dark p-2">
+  <div class="container-xxl">
+    <div class="row">
+      <div class="col text-center">
+        <img src="/assets/images/project1/plan-sunshine.jpg" alt="" height="500" class="img-fluid">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="mapSection" class="bg-light text-muted">
+  <div class="container-xxl">
+    <div class="row">
+      <div class="col text-center">
+        <h4 class="display-6">Layout <span class="text-warning">map</span></h4>
+        <p class="lead">Geographical location of layout with map.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="map" class="bg-light">
+<div class="container-xxl">
+  <div class="row">
+    <div class="col-lg-6 p-2">
+      <img src="/assets/images/project1/map-sunshine.jpg" alt="" class="img-fluid">
+    </div>
+    <div class="col-lg-6 p-2">
+      <figure class="text-dark">
+        <blockquote class="blockquote">
+          <p>Fortune Sunshine City.</p>
+        </blockquote>
+        <figcaption class="blockquote-footer">
+          Address :<cite title="Source Title" class="text-dark">123-street, vijayawada 520008, Andhra predesh</cite>
+        </figcaption>
+        <figcaption class="blockquote-footer">
+          Land (in Sq/ft) :<cite title="Source Title" class="text-dark">3200</cite>
+        </figcaption>
+        <figcaption class="blockquote-footer">
+          Cost (ft) :<cite title="Source Title" class="text-dark">5,000/-</cite>
+        </figcaption>
+      </figure>
+      <div class="d-flex flex-row p-2">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d957.1476971780104!2d80.89981752916886!3d16.34384018620577!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a36020220bbcb15%3A0xbb355e24c7e8095b!2sKrishna%2C%20Andhra%20Pradesh%20521256!5e0!3m2!1sen!2sin!4v1618992944767!5m2!1sen!2sin" width="500" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+  </div>
 </div>
-</header>
+</section>
 
+<section id="amenitySection" class="bg-light text-muted">
+  <div class="container-xxl">
+    <div class="row">
+      <div class="col text-center">
+        <h4 class="display-6">Layout <span class="text-warning">Amenities</span></h4>
+        <p class="lead">Features that imrove the liveyhood of community.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="amenities">
+  <div class="dark-overlay">
+    <div class="container-xxl">
+      <div class="row">
+        <div class="col-lg-2 p-2" *ngFor="let item of amenityData;"> 
+          <div class="amenity text-center">
+            <img src="{{item.img}}" width="70" class="img-fluid" alt="">
+            <p class="text-dark">{{item.des}}</p>
+          </div>
+        </div>  
+      </div>
+    </div>
+  </div>
+</section>
 
-
+<section id="gallerySection" class="bg-light text-muted">
+  <div class="container-xxl">
+    <div class="row">
+      <div class="col text-center">
+        <h4 class="display-6">Layout <span class="text-warning">Gallery</span></h4>
+        <p class="lead">Some of actual on-site pictures.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="gallery" class="bg-light text-muted">
+  <div class="container-xxl">
+    <div class="row">
+      <mdb-image-modal [modalImages]="imagesBasic" type="no-margin"></mdb-image-modal>
+    </div>
+  </div>
+</section>

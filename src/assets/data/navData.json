@@ -8,19 +8,19 @@
         "navUrl":"detailsSection"
     },
     {
-        "navLink":"Plan",
-        "navUrl":"#planSection"
+        "navLink":"Layout plan",
+        "navUrl":"planSection"
     },
     {
         "navLink":"Map location",
-        "navUrl":"#mapSection"
+        "navUrl":"mapSection"
     },
     {
         "navLink":"Amenities",
-        "navUrl":"#amenitySection"
+        "navUrl":"amenitySection"
     },
     {
         "navLink":"Gallery",
-        "navUrl":"#gallerySection"
+        "navUrl":"gallerySection"
     }
 ]

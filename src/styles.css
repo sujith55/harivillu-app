@@ -3,3 +3,12 @@ body {
   background: #555;
   color: #fff;
 }
+.card{
+  border-radius: 0;
+}
+.navbar-light .navbar-nav .nav-link{
+  color: black;
+}
+.navbar-light .navbar-nav .nav-link:hover,:focus{
+  color: rgb(255, 168, 6);
+}

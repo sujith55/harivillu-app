@@ -24,19 +24,23 @@
   }
 
   #home-section{
-    background: url("/assets/images/cover.jpg") no-repeat;
-    min-height: 600px;
+    /* background: url("/assets/images/cover.jpg") no-repeat; */
+    /* min-height: 600px; */
     background-size: cover;
     background-attachment: fixed;
   }
+  #home-section #slideShow{
+    min-width: 100%;
+    padding: 0;
+  }
 
   #home-section .dark-overlay {
-    background-color: rgba(0, 0, 0, 0.7);
+    /* background-color: rgba(0, 0, 0, 0.8); */
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    min-height: 600px;
+    min-height: 100%;
   }
 
   #home-section .dark-overlay .home-inner{

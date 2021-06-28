@@ -21,8 +21,39 @@
 
   #overviewSection{
     padding-top: 250px;
-    background: url("/assets/images/cover.jpg") no-repeat;
+    background: url("/assets/images/3.jpg") no-repeat;
     min-height: 600px;
+    min-width: 100%;
     background-size: cover;
     background-attachment: fixed;
+  }
+  #project-details{
+    background: url("/assets/images/3.jpg") no-repeat;
+    /* padding: 2px; */
+    min-height: 400px;
+  }
+  #project-details .dark-overlay{
+     background-color: rgba(0, 0, 0, 0.7);
+     position: absolute;
+     /* top: 0; */
+     left: 0;
+     width: 100%;
+     min-height: 400px;
+  }
+  #amenities{
+    background: url("/assets/images/3.jpg") no-repeat;
+    min-height: 400px;
+  }
+  #amenities .dark-overlay{
+    background-color: rgba(255, 255, 254, 0.815);
+    position: absolute;
+     /* top: 0; */
+     left: 0;
+     width: 100%;
+     min-height: 400px;
+  }
+  #amenities .amenity{
+    padding: 4px;
+    min-width: 120px;
+    align-items: center;
   }

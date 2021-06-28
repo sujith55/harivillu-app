@@ -14,7 +14,7 @@ export class LayoutsComponent implements OnInit {
   constructor(private service_:LayoutsService) {
     this.service_.getLayoutDetails().subscribe((res)=>{
       this.layouts = res['data'];
-      console.log(this.layouts);
+      console.log(this.layouts); 
     });
   }
 
